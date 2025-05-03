@@ -1,0 +1,148 @@
+body {
+  margin: 30px 40px 30px 40px;
+  font-family: "Press Start 2P", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 7px 7px 7px 7px;
+    }
+.container {
+  display: flex;
+  padding-right: 40px;
+  padding-left: 40px; 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-around;
+  background-color: black;
+  min-height: 200px;
+  max-height: 100%;
+  border-radius: 30px 40px 30px 40px;
+   
+}
+.column {
+  flex: 1; /* Each column takes equal space */
+background: linear-gradient(green, pink);
+  background-color: rgb(216, 250, 247); /* Optional: Adds a background for visibility */
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px; /* O-ptional: Adds padding inside columns */
+border: 20px dotted gold;
+  border-radius: 10px 10px 10px 10px; /* Optional: Rounds corners */
+width: 200px;}
+.flashing-dotted-border {
+border: 2px dotted #000; /* Dotted border */
+animation: flash 1s infinite; /* Animation for flashing effect */
+}
+
+@keyframes flash {
+0%, 100% {
+  border-color: #000; /* Visible border */
+}
+50% {
+  border-color: transparent; /* Hide border */
+}
+}
+
+
+#home-score {   
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: red; 
+  text-align: center;
+  font-size: 40px;
+text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 12px 6px 12px 6px;
+border: dotted white;
+  margin: 30px 40px 30px 40px; 
+ 
+}
+#guest-score { 
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: blue; 
+  color: white;
+  text-align: center;
+  font-size: 40px;
+text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.1);
+  
+border-radius: 12px 6px 12px 6px;
+border: dotted white;
+  margin: 30px 40px 30px 40px;
+}
+
+.home-display {
+  display: flex;
+  flex-direction: column;
+background-color: black;
+margin: 20px;
+text-align: center;
+font-size: 90px;
+color: white;
+}
+
+.guest-display {
+  display: flex;
+  flex-direction: column; 
+background-color: black; 
+margin: 20px;
+text-align: center;
+font-size: 90px;
+color: white;
+}
+.home {
+margin: 15px;
+padding: 20px;
+padding-right: 50px;
+padding-bottom: 20px;
+padding-left: 50px;
+background-color: blue;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 20px;
+cursor: pointer; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+transition: transform 0.2s ease, box-shadow .02s ease, background-color 0.3s ease,color 0.3s, ease;
+
+}
+.guest {
+margin: 15px;
+padding: 20px;
+padding-right: 50px;
+padding-bottom: 20px;
+padding-left: 50px;
+background-color: red;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 20px;
+cursor: pointer; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+transition: transform 0.2s ease, box-shadow .02s ease, background-color 0.3s ease,color 0.3s, ease;
+}
+.display-home-btns {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+background-color: red;
+border-radius: 7px;
+}
+.display-guest-btns {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+background-color: blue;
+border-radius: 7px;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
